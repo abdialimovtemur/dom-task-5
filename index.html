@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body style="background-color: skyblue;">
 
 
 
     <!-- 2-masala -->
 
-    <div style="width: 600px; height: 300px; background-color: red; margin: 0 auto; border-radius: 5px; display: flex; align-items: center; border: 6px solid; justify-content: center; box-shadow: 0px 0px 20px 2px inset; flex-direction: column; margin-top: 120px;">
+    <div
+        style="width: 600px; height: 300px; background-color: red; margin: 0 auto; border-radius: 5px; display: flex; align-items: center; border: 6px solid; justify-content: center; box-shadow: 0px 0px 20px 2px inset; flex-direction: column; margin-top: 120px;">
         <h1 style="color: gold; text-shadow: 0px 2px 12px blue;">Nechta so'z borligi</h1>
         <input type="text" onkeyup="handleChange(event)" style="width: 450px; height: 33px; border-radius: 5px;">
         <div id="display" style="margin-top: 20px; color: white; font-size: 24px;"></div>
@@ -30,32 +33,37 @@
 
 
     <!-- 3-masala -->
-    <div style="width: 600px; height: 500px; background-color: red; margin: 0 auto; border-radius: 5px; display: flex; align-items: center; border: 6px solid; justify-content: center; box-shadow: 0px 0px 20px 2px inset; flex-direction: column; margin-top: 120px; gap: 24px;">
+    <div
+        style="width: 600px; height: 500px; background-color: red; margin: 0 auto; border-radius: 5px; display: flex; align-items: center; border: 6px solid; justify-content: center; box-shadow: 0px 0px 20px 2px inset; flex-direction: column; margin-top: 120px; gap: 24px;">
         <h1 style="color: gold; text-shadow: 0px 2px 12px blue;">Text area</h1>
 
-        <textarea id="textareaId" onkeyup="getTextarea(event)"  style="height: 130px; width: 450px;"></textarea>
-        <input type="text" onkeyup="getEquals(event)" style="width: 450px; height: 33px; border-radius: 5px;">
-        
+        <textarea id="textareaId3" onkeyup="getEquals(event)" style="height: 130px; width: 450px;"></textarea>
+        <input id="inputId3" type="text" onkeyup="getEquals(event)"
+            style="width: 450px; height: 33px; border-radius: 5px;">
+
         <div id="display3" style="margin-top: 20px; color: white; font-size: 24px;"></div>
     </div>
 
 
 
 
-
-
-
-
-
+    <!-- 4-masala -->
+    <div
+        style="width: 600px; height: 500px; background-color: red; margin: 0 auto; border-radius: 5px; display: flex; align-items: center; border: 6px solid; justify-content: center; box-shadow: 0px 0px 20px 2px inset; flex-direction: column; margin-top: 120px; gap: 24px;">
+        <input type="file" id="fileInput" style="background-color: yellow; box-shadow: 0px 0px 20px blue;">
+        <div id="fileSize" style="margin-top: 20px; font-size: 18px;"></div>
+    </div>
 
 
 
 
     <!-- 5-masala -->
 
-    <div style="width: 900px; height: 400px; background-color: red; margin: 0 auto; border-radius: 5px; display: flex; align-items: center; border: 6px solid; justify-content: center; box-shadow: 0px 0px 20px 2px inset; flex-direction: column; margin-top: 120px;">
+    <div
+        style="width: 900px; height: 400px; background-color: red; margin: 0 auto; border-radius: 5px; margin-bottom: 100px; display: flex; align-items: center; border: 6px solid; justify-content: center; box-shadow: 0px 0px 20px 2px inset; flex-direction: column; margin-top: 120px;">
         <h1 style="color: white;">Qavslar teng yoki teng emasligi</h1>
-        <input type="text" type="text" onkeyup="getBracket(event)" style="width: 450px; height: 33px; border-radius: 5px;">
+        <input type="text" type="text" onkeyup="getBracket(event)"
+            style="width: 450px; height: 33px; border-radius: 5px;">
         <div id="display5" style="margin-top: 20px; color: white; font-size: 24px;"></div>
         <h2>Ochuvchi qavslar: <span id="leftbrack"></span></h2>
         <h2>Ochuvchi qavslar: <span id="rightbrack"></span></h2>
@@ -67,4 +75,5 @@
 
     <script src="./js/main.js"></script>
 </body>
+
 </html>

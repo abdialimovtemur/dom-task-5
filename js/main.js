@@ -26,7 +26,23 @@ const handleChange = (event) => {
 
 // 3-masala Textarea elementi yaratilsin. Shu element ichiga ixtiyoriy matn qo'yilsin. Boshqa alohida blockda input elementi qo'yilsin. Input elementi ichiga yozilgan so'z textarea ichidagi matnda bor yoki yo'qligi aniqlansin. Bu vazifani bajarishda siz loop elementlaridan, onclick yoki onkeyup event laridan foydalanishingiz mumkin bo'ladi.
 
-const 
+const getEquals = (event) => {
+    const { value } = event.target
+    const area = document.getElementById('textareaId3').value.toLowerCase()
+    const inp = document.getElementById('inputId3').value.toLowerCase()
+
+
+    if (area && inp) {
+        if (area.includes(inp)) {
+            display3.innerText = ("Bu so'z text areada bor")
+        }else{
+            display3.innerText = ("bu so'z text areada yo'q")
+        }
+    }else{
+        display3.innerText = ("Ikkala inputni ham so'z bilan to'ldiring")
+    }
+
+}
 
 
 
@@ -35,11 +51,22 @@ const
 
 
 
+// 4-masala Fayl yuklash uchun input type file yarating. Foydalanuvchi file tanlaganda uning hajmi (o'lchami) KB larda ko'rsatilsin
 
 
 
+document.getElementById('fileInput').addEventListener('change', function(event) {
+    const fileInput = event.target;
+    const file = fileInput.files[0];
 
+    if (file) {
+        const fileSizeKB = (file.size / 1024).toFixed(3);
 
+        document.getElementById('fileSize').textContent = `Fayl hajmi: ${fileSizeKB} KB`;
+    } else {
+        document.getElementById('fileSize').textContent = 'Fayl tanlanmagan.';
+    }
+});
 
 
 
@@ -65,10 +92,10 @@ const getBracket = (event) => {
 
     if (bracketleft === bracketright) {
         display5.innerText = ("Qavslar bir biriga teng")
-    }else{
+    } else {
         display5.innerText = ("Qavslar bir biriga emas")
     }
-    
+
     const leftbrack = document.getElementById('leftbrack')
     const rightbrack = document.getElementById('rightbrack')
 
